@@ -1,4 +1,4 @@
-#import "template_umu.typ": *
+#import "template/template_umu.typ": *
 
 // #show: project.with(
 //   title: "TEST PLANTILLA UMU",

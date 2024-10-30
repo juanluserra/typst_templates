@@ -24,7 +24,8 @@
       affiliation: "Universidad de Albacete"
     )
   ),
-  date: "Marzo de 2024"
+  date: "Marzo de 2024", 
+  location: "Murcia, España"
 )
 
 

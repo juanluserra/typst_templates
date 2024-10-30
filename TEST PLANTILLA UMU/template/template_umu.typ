@@ -1,7 +1,7 @@
 #import "@preview/cetz:0.3.1"
 #import "@preview/chic-hdr:0.4.0": *
 
-#let template_umu(title: "", subtitle: "", authors: (), date: "", body) = {
+#let template_umu(title: "", subtitle: "", authors: (), date: "", location: "", body) = {
   //--------------------
   // Creamos la portada
   //--------------------
@@ -28,9 +28,10 @@
       let y = -.1
       let r = 1.05
       let w = 1.5pt
-      line((-5, 0), (5, 0), stroke: w)
-      line((-5/r, y), (5/r, y), stroke: w)
-      line((-5/r, -y), (5/r, -y), stroke: w)
+      let x = 7
+      line((-x, 0), (x, 0), stroke: w)
+      line((-x/r, y), (x/r, y), stroke: w)
+      line((-x/r, -y), (x/r, -y), stroke: w)
     })
   )
 
@@ -51,11 +52,16 @@
   )
 
   // Fecha y decoracion
-  if date != ""{
+  if date != "" or location != ""{
     v(5em)
     align(center)[
       #v(-.5em)
-      #date
+      #if location != "" {
+        location
+      } \
+      #if date != "" {
+        date
+      }
       #v(-.4em)
       
       #cetz.canvas({

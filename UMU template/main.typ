@@ -1,31 +1,25 @@
 #import "template/template_umu.typ": *
 
-// #show: project.with(
-//   title: "TEST PLANTILLA UMU",
-//   authors: (
-//     (name: "Juan Luis Serradilla Tormos", affiliation: "Universidad de Murcia (UMU)"),
-//   ),
-// )
 
 #show: template_umu.with(
   title: "Plantilla UMU",
   subtitle: [Prueba de la plantilla \ para trabajos de la UMU],
   authors: (
     (
-      name: "Juan Luis Serradilla Tormos",
-      affiliation: "Universidad de Murcia (UMU)"
+      name: "nombre1",
+      affiliation: "intitucion1"
     ),
     (
-      name: "Alejandro Cervantes García",
-      affiliation: "Universidad de Madrid"
+      name: "nombre2",
+      affiliation: "institucion2"
     ),
     (
-      name: "Isabel Núñez Pérez",
-      affiliation: "Universidad de Albacete"
+      name: "nombre3",
+      affiliation: "institucion3"
     )
   ),
-  date: "Marzo de 2024", 
-  location: "Murcia, España"
+  date: "fecha", 
+  location: "localizacion"
 )
 
 
